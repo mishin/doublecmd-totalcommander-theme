@@ -165,7 +165,11 @@ def apply(no_icon, no_gtkrc, force):
         open(GTKRC, "w", encoding="utf-8").write(
             "%s: классическая серая тема GTK2 (стиль Windows 95 / TC)\n"
             "# Откат: удалите этот файл\n"
-            'gtk-theme-name="Raleigh"\n' % GTKRC_MARK)
+            'gtk-theme-name="Raleigh"\n'
+            "\n"
+            "# HiDPI-экраны: если заголовки колонок и текст диалогов мелкие,\n"
+            "# раскомментируйте строку ниже и подберите число (18–24):\n"
+            '# gtk-font-name = "Sans 20"\n' % GTKRC_MARK)
         print("GTK2-тема Raleigh включена (~/.gtkrc-2.0 создан)")
 
     # --- иконка -------------------------------------------------------------
