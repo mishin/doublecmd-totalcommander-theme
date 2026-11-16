@@ -88,6 +88,31 @@ python3 install.py --remove-icon    # иконка
   структура `colors.json` может отличаться — если что-то пошло не так,
   `--restore` вернёт всё как было.
 
+## Горячие каталоги (Ctrl+D) — как в TC
+
+Меню горячих каталогов в Double Commander работает так же, как в Total
+Commander, и уже назначено на те же клавиши:
+
+| Клавиши | Команда | Что делает |
+|---|---|---|
+| **Ctrl+D** | `cm_DirHotList` | попап-меню с сохранёнными каталогами (как Ctrl+D в TC) |
+| **Ctrl+Shift+D** | `cm_ConfigDirHotList` | окно настройки — аналог «Настройка…» в меню TC |
+
+Как наполнить список (Настройки → Каталоги / Ctrl+Shift+D):
+
+* **«Добавить каталог активной вкладки»** — аналог TC-шного «Добавить текущий
+  каталог»;
+* «Добавить каталоги активной **и неактивной** вкладок» — обе панели разом;
+* «Добавить выделенные или каталог под курсором» — замаркуйте пачку папок в
+  панели и закиньте их одним кликом (в TC так нельзя);
+* «Добавить вручную» и разделители — для порядка; список — дерево, есть
+  сворачивание веток и «Тест итогового меню» (предпросмотр попапа прямо из
+  диалога);
+* экспорт/импорт списка в файл — удобно переносить между машинами.
+
+Единственное отличие от TC: в попапе Ctrl+D у DC 1.1.32 **нет** пункта
+«Добавить текущий каталог» — добавление идёт через диалог (Ctrl+Shift+D).
+
 ## English TL;DR
 
 Make [Double Commander](https://doublecmd.sourceforge.io) (GTK build, Linux)
@@ -108,6 +133,9 @@ python3 install.py --remove-icon
 User-level config only (`~/.config/doublecmd`), automatic timestamped
 backups, DC must be closed while running the script. Tested with
 Double Commander 1.1.32 (GTK2) on Ubuntu / GNOME (Wayland).
+
+Tip: **Ctrl+D** opens the TC-style directory hotlist, **Ctrl+Shift+D** opens
+its editor ("Настройки → Каталоги") — see the section above for details.
 
 ## Лицензия
 
